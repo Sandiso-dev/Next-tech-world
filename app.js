@@ -1,9 +1,8 @@
-const menuBtn = document.querySelector(".bar-container");
-const activeMenu = document.querySelector(".navbar__menu");
-const body = document.querySelector("body");
+const humburger = document.querySelector(".hamburger");
+let navBar = document.querySelector(".nav-bar");
 
-menuBtn.addEventListener('click',function(){
-   activeMenu.style.opacity = '0';
-});
+humburger.addEventListener('click',function(){
+    navBar.classList.toggle("active");
+})
 
 
